@@ -135,3 +135,37 @@ class Person6 {
 const person6 = new Person6("kodecamp");
 // person6.name = "k";
 person6.name = "kamp";
+
+//? prototype
+function Person7(name) {
+  this.name = name;
+}
+
+Person7.prototype.greet = function () {
+  // console.log(`hello, ${this.name}`);
+};
+
+const person7 = new Person7("kodecamp");
+person7.greet();
+
+//? instanceof
+class Animal5 {
+  constructor(name) {
+    this.name = name;
+  }
+}
+
+class Dog5 extends Animal5 {
+  constructor(name, breed) {
+    super(name);
+    this.breed = breed;
+  }
+}
+
+const animal5 = new Animal5("alitrough");
+const nkita = new Dog5("ekuke");
+
+// console.log(animal5 instanceof Animal5);
+// console.log(nkita instanceof Dog5);
+// console.log(nkita instanceof Animal5);
+// console.log(animal5 instanceof Dog5);
