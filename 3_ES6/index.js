@@ -6,4 +6,13 @@ const res1 = sub(12, 8);
 const res2 = mul(12, 8);
 const res3 = multiplyUsingAdd(12, 8);
 
-console.log(res1, res2, res3);
+// console.log(res1, res2, res3);
+
+const user = {
+  name: "kodecamp",
+  greet: function () {
+    console.log(`hello, ${this.name}`);
+  },
+};
+
+user?.greet?.();

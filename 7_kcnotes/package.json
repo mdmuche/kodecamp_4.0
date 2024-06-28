@@ -1,0 +1,41 @@
+{
+  "name": "7_kcnotes",
+  "version": "1.0.0",
+  "description": "kodecamp notes",
+  "main": "index.ts",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon",
+    "build": "node --loader ts-node/esm esbuild.config.ts",
+    "start": "node ./build/index.js",
+    "test": ""
+  },
+  "keywords": [
+    "kcnotes",
+    "kodecamp",
+    "typescript",
+    "node"
+  ],
+  "author": "kodecamp",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/fs-extra": "^11.0.4",
+    "@types/jsonwebtoken": "^9.0.6",
+    "@types/node": "^20.14.9",
+    "esbuild": "^0.21.5",
+    "nodemon": "^3.1.4",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.2",
+    "vitest": "^1.6.0"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "fs-extra": "^11.2.0",
+    "jsonwebtoken": "^9.0.2",
+    "sqlite": "^5.1.1",
+    "sqlite3": "^5.1.7"
+  },
+  "engines": {
+    "node": "20"
+  }
+}
